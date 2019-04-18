@@ -6,10 +6,11 @@ import router from './router'
 import iView from 'iview';
 import 'iview/dist/styles/iview.css';
 import axios from 'axios';
+import VueSocketio from 'vue-socket.io';
 Vue.prototype.$ajax = axios
 Vue.use(iView);
 Vue.config.productionTip = false;
-
+Vue.use(VueSocketio,'http://localhost:8181/gs-guide-websocket');
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
