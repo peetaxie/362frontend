@@ -22,6 +22,7 @@ import postitem362 from '@/components/postitem362'
 import itemdetail362 from '@/components/itemdetail362'
 import transaction362 from '@/components/transaction362'
 import chat362 from '@/components/chat362'
+import cart362 from '@/components/cart362'
 
 
 Vue.use(Router)
@@ -136,10 +137,15 @@ export default new Router({
       name: 'transaction362',
       component:transaction362
     },
-        {
+     {
       path: '/chat362',
       name: 'chat362',
       component:chat362
+    },
+    {
+      path: '/cart362',
+      name: 'cart362',
+      component:cart362
     },
   ]
 })

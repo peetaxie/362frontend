@@ -30,6 +30,7 @@
                     if(response.data.code==1){
                       localStorage.setItem('useremail',response.data.user.email);
                       localStorage.setItem('userid',response.data.user.id);
+                      localStorage.setItem('username',response.data.user.name);
                       window.location.href='#/home362';
                     }
                     else{
